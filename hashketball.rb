@@ -136,7 +136,7 @@ def num_points_scored (player)
       #ik = team_name:, iv = "Brooklyn Nets"
       if ik == :players
         iv.find do |hash|
-          hash.value?(player)
+          found = hash.value?(player)
           binding.pry
         end
       end
