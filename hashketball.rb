@@ -196,6 +196,7 @@ def big_shoe_rebounds
         shoe_size == :hash[:shoe]
       end
     end
+  end
   game_hash.each do |k, v|
     v[:players].each do |hash|
       if hash.value?(shoe_size)
