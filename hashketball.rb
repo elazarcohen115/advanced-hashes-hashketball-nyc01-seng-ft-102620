@@ -136,8 +136,10 @@ def num_points_scored (player)
       #ik = team_name:, iv = "Brooklyn Nets"
       if ik == :players
         iv.find do |hash|
-          found = hash.value?(player)
+          hash.value?(player)
+          hats = game_hash[k][v][ik][iv][:points]
         end
+        binding.pry
       end
     end
   end
