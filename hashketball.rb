@@ -133,16 +133,12 @@ def num_points_scored (player)
   hats = 0
   game_hash.each do |k,v|
     #binding.pry
-    v.each do |ik, iv|
-      #ik = team_name:, iv = "Brooklyn Nets"
-      if ik == :players
-        iv.find do |hash|
-          hash.value?(player)
-          hats = hash.values_at(:points)
-        end
-        return hats
-        #binding.pry
+    v.each do |ik, iv| #ik = team_name:, iv = "Brooklyn Nets"
+      iv.find do |hash|
+        hash.value?(player)
+        hats = hash.values_at(:points)
       end
+      return hats
     end
   end
 end
