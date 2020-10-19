@@ -137,6 +137,7 @@ def num_points_scored (player)
       if ik == players:
         ik.find do |hash|
           hash.value?(player)
+          binding.pry
         end
       end
     end
