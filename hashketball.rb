@@ -176,7 +176,7 @@ def player_numbers (team)
     if v.value?(team)
       v[:players].each do |hash|
         if hash.key?(:number)
-          points << hash.values_at(:number)
+          points << hash[:number]
         end
       end
     end
