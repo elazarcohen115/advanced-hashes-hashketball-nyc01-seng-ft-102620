@@ -133,9 +133,11 @@ def num_points_scored (player)
   game_hash.each do |k,v|
     #binding.pry
     v.each do |ik, iv|
-      #team_name:
-      iv.each do |iik, iiv|
-        binding.pry
+      #ik = team_name:, iv = "Brooklyn Nets"
+      if ik == players:
+        ik.find do |hash|
+          hash.value?(player)
+        end
       end
     end
   end
