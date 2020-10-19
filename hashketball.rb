@@ -139,7 +139,7 @@ def num_points_scored (player)
           hash.value?(player)
           hats = hash[:points]
         end
-        binding.pry
+        #binding.pry
       end
     end
   end
