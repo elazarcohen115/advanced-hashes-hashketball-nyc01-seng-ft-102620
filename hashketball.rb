@@ -183,6 +183,7 @@ def player_stats (player)
     v[:players].each do |hash|
       if hash.value?(player)
         return hash
+        binding.pry
       end
     end
   end
