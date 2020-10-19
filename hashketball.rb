@@ -190,11 +190,11 @@ end
 
 def big_shoe_rebounds
   shoe_size = game_hash[:home][:players][0][:shoe]
-  binding.pry
   game_hash.each do |k, v|
     if v[:players][:shoe] > shoe_size
       shoe_size = v[:players][:shoe]
     end
+    binding.pry
   end
   game_hash.each do |k, v|
     v[:players].each do |hash|
