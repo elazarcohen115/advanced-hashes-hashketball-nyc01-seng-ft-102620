@@ -198,7 +198,7 @@ def big_shoe_rebounds
   game_hash.each do |k, v|
     v[:players].each do |hash|
       if hash.value?(shoe_size)
-        return player_name
+        return hash[:rebounds]
       end
     end
   end
