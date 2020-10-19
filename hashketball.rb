@@ -184,6 +184,15 @@ def player_numbers (team)
   return points
 end
 
+def player_stats (player)
+  game_hash.each do |k, v|
+    v[:players].each do |hash|
+      if hash.value?(player)
+        return hash
+      end
+    end
+  end
+end
 
 
 
