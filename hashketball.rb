@@ -137,7 +137,6 @@ def num_points_scored (player)
       if ik == :players
         iv.find do |hash|
           found = hash.value?(player)
-          binding.pry
         end
       end
     end
