@@ -196,7 +196,6 @@ shoe_size = game_hash[:home][:players][0][:shoe]
         shoe_size = hash[:shoe]
       end
     end
-    binding.pry
   end
   game_hash.each do |k, v|
     v[:players].each do |hash|
