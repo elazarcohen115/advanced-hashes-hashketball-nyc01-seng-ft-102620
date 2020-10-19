@@ -133,8 +133,9 @@ def num_points_scored (player)
     v.each do |ik, iv|
       iv.each do |iik, iiv|
         binding.pry
-
-
+      end
+    end
+  end
 end
 
 
