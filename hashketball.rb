@@ -137,7 +137,7 @@ def num_points_scored (player)
       if ik == :players
         iv.find do |hash|
           hash.value?(player)
-          hats = game_hash[k][ik][hash][:points]
+          hats = hash[:points]
         end
         binding.pry
       end
