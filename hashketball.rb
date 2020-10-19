@@ -170,17 +170,14 @@ def team_names
   result
 end
 
-def player_numbers
-  game_hash[:home][:players].each do |hash|
-    if hash.value?(player)
-      return hash[:number]
+def player_numbers (team)
+  game_hash.each do |k, v|
+      if v.value?(team)
+        binding.pry
+      end
     end
-  end
-  game_hash[:away][:players].each do |hash|
-    if hash.value?(player)
-      return hash[:number]
-    end
-  end
+
+
 end
 
 
