@@ -1,7 +1,8 @@
-# Write your code below game_hash
+require 'pry'# Write your code below game_hash
 def game_hash
   {
-    home: {
+    home:
+    {
       team_name: "Brooklyn Nets",
       colors: ["Black", "White"],
       players: [
@@ -125,5 +126,31 @@ def game_hash
     }
   }
 end
+
+
+def num_points_scored (player)
+  game_hash.each do |k,v|
+    v.each do |ik, iv|
+      iv.each do |iik, iiv|
+        binding.pry
+
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Write code here
