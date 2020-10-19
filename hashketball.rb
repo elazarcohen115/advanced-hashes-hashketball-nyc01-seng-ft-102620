@@ -140,14 +140,11 @@ def num_points_scored (player)
 end
 
 def shoe_size (player)
-  game_hash[:home][:players].each do |hash|
-    if hash.value?(player)
-      return hash[:shoe]
-    end
-  end
-  game_hash[:away][:players].each do |hash|
-    if hash.value?(player)
-      return hash[:shoe]
+  game_hash.each do |k, v|
+    v[:players].each do |hash|
+      if hash.value?(player)
+        return hash[:shoe]
+      end
     end
   end
 end
