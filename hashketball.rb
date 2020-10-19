@@ -193,9 +193,7 @@ shoe_size = game_hash[:home][:players][0][:shoe]
   game_hash.each do |k, v|
     v[:players].each do |hash|
       if hash[:shoe] > shoe_size
-
         shoe_size == hash[:shoe]
-                binding.pry
       end
     end
   end
