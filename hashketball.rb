@@ -171,13 +171,17 @@ def team_names
 end
 
 def player_numbers (team)
+  points = []
   game_hash.each do |k, v|
-      if v.value?(team)
-        binding.pry
+    if v.value?(team)
+      v[:players].each do |hash|
+        if hash.key?(:points)
+          points << hash.values_at(:points)
+        end
       end
     end
-
-
+  end
+  return points
 end
 
 
